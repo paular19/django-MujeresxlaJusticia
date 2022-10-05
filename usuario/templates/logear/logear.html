@@ -1,0 +1,65 @@
+{% extends "ProyectoMujeresApp/base.html" %}
+{% load static %}
+{% block content %}
+
+<form method="post" action="" style="color: blueviolet;">
+
+    {% csrf_token %}
+    
+        {% if messages %}
+
+        {% for mensaje in messages %}
+
+        {{mensaje}}
+
+        {% endfor %}
+
+        {% endif %}
+
+    {{form}}
+
+    <button type="submit">login</button>
+
+ 
+
+
+</form>
+
+
+
+
+
+    <!-- <div class="contenedor" id="contenedor">
+        -->
+
+        <!-- <div class="form-container sing-up-container">
+            <form action="#">
+                <h1 class="ingresa">
+                    Ingresá
+                </h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span class="usa">Usá tu cuenta</span>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Contraseña"/>
+                <a href="#"><p class="olvidaste">Olvidaste tu contraseña?</p></a>
+                <button>Ingresar</button>
+            </form>
+        </div>
+
+        
+
+    </div>
+   -->
+      
+
+      
+  
+
+   
+
+{% endblock %}
+

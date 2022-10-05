@@ -1,0 +1,49 @@
+{% extends "ProyectoMujeresApp/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="caja">
+    <div class="contacto-form">    
+        
+        <h1 class="contacto"> PONETE EN CONTACTO </h1>  <img src="{% static 'ProyectoMujeresApp/ASSETS/correos-electronicos.png' %}" alt="correo" class="img-correo">
+        
+        {% if "valido" in request.GET %}
+            <p>informacion enviada correctamente</p>
+        {% endif %}
+            <form action="" method="POST">{{miFormulario.as_p}}
+                {% csrf_token %}
+                    
+                        <!-- <label class="label2">Nombre <input type="text" name="nombre" id="nombre"></label>
+                    
+                    
+                        <label class="label2">Email <input type="email" name="email" id="email"></label>
+                    
+                    
+                        <label class="label2">Asunto <input type="text" name="asunto" id="nombre"></label>
+                    
+                        <label class="label2">Mensaje </label>
+                        
+                        
+                        
+                        
+                        <textarea name="mensaje" rows="5"></textarea>
+                        <imput type="text" name="mensaje" id="mensaje"></imput>
+                     -->
+                    <button type="submit">
+                    Enviar
+                    </button>
+            </form>
+    </div>  
+      
+
+        <div class="contact-info">
+            
+       <img src="{% static 'ProyectoMujeresApp/ASSETS/correos-electronicos.png' %}" alt="correo" class="img-correo">
+       
+       
+           
+        </div>
+    
+</div>
+
+{% endblock %}
