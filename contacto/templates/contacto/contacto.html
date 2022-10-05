@@ -1,11 +1,11 @@
-{% extends "ProyectoMujeresApp/base.html" %}
+{% extends "web/base.html" %}
 {% load static %}
 {% block content %}
 
 <div class="caja">
     <div class="contacto-form">    
         
-        <h1 class="contacto"> PONETE EN CONTACTO </h1>  <img src="{% static 'ProyectoMujeresApp/ASSETS/correos-electronicos.png' %}" alt="correo" class="img-correo">
+        <h1 class="contacto"> PONETE EN CONTACTO </h1>  <img src="{% static 'web/assets/correos-electronicos.png' %}" alt="correo" class="img-correo">
         
         {% if "valido" in request.GET %}
             <p>informacion enviada correctamente</p>
@@ -38,7 +38,7 @@
 
         <div class="contact-info">
             
-       <img src="{% static 'ProyectoMujeresApp/ASSETS/correos-electronicos.png' %}" alt="correo" class="img-correo">
+       <img src="{% static 'web/assets/correos-electronicos.png' %}" alt="correo" class="img-correo">
        
        
            

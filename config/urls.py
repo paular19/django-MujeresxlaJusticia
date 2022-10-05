@@ -22,15 +22,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('', include('ProyectoMujeresApp.urls')),
+    path('', include('web.urls')),
     path('comunidad/', include('comunidad.urls')),
     path('contacto/', include('contacto.urls')),
     path('usuario/', include('usuario.urls')),
 
-=======
-    path('', include('web.urls')),
->>>>>>> c2da2b72455eb1d56277cde350dd8b93d26fffa9
 ]
 
 
