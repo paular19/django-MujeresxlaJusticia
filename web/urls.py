@@ -1,8 +1,12 @@
 from django.urls import path
 
+<<<<<<< HEAD
 from ProyectoMujeresApp import views
 from django.conf import settings
 from django.conf.urls.static import static
+=======
+from web import views
+>>>>>>> c2da2b72455eb1d56277cde350dd8b93d26fffa9
 
 urlpatterns = [
     path('', views.home, name="Home"),

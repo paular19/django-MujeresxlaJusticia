@@ -1,72 +1,73 @@
 {% extends "ProyectoMujeresApp/base.html" %}
 {% load static %}
 {% block content %}
-
-
+ 
+ 
         <h2 class="titulo"> COMISIONES </h2>
-
+ 
 <section class="container__card">
     <a href="#" class=href-card><div class="card">
         <img src="{% static 'ProyectoMujeresApp/ASSETS/abuelos.png' %}" alt="iconoimage" class="icono-image">
-            
+           
             <h2>NIÑEZ, ADOLESCENCIA Y VEJEZ </h2>
-
-
-        
+ 
+ 
+       
     </div>
 </a>
-
-
+ 
+ 
 <a href="#" class=href-card><div class="card">
             <img src="{% static 'ProyectoMujeresApp/ASSETS/detener-la-violencia.png'%}" alt="iconoimage" class="icono-image">
             <h2><br>
                 VIOLENCIA INSTITUCIONAL</h2>
-      
-
+     
+ 
            
-
-        
+ 
+       
     </div>
 </a>
-
+ 
 <a href="../area/area.html" class=href-card><div class="card">
         <img src="{% static 'ProyectoMujeresApp/ASSETS/jurisprudencia.png'%}" alt="iconoimage" class="icono-image">
-            <h2><br> 
+            <h2><br>
                 JURISPRUDENCIA
-
+ 
             </h2>
-        
-
-
-
        
-    </div> 
-</a> 
+ 
+ 
+ 
+       
+    </div>
+</a>
 <a href="#" class=href-card><div class="card">
     <img src="{% static 'ProyectoMujeresApp/ASSETS/gobierno.png'%}" alt="iconoimage" class="icono-image">
         <h2><br>
             LEGISLACIÓN Y PROYECTOS
-
+ 
         </h2>
-    
    
-</div> 
+   
+</div>
 </a>
 <a href="{% url 'Usuario' %}" class=href-card><div class="card">
     <img src="{% static 'ProyectoMujeresApp/ASSETS/graduado.png'%}" alt="iconoimage" class="icono-image">
         <h2><br>
      
             AREA ACADÉMICA
-
+ 
         </h2>
-    
    
-</div> 
+   
+</div>
 </a>
 </section>
  
-      
-      
-
+     
+     
+ 
    
 {% endblock %}
+ 

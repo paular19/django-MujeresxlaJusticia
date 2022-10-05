@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     {% load static %}
     <meta charset="UTF-8">
@@ -15,78 +15,78 @@
     <link href="{% static 'ProyectoMujeresApp/css/comunidad.css' %}" rel="stylesheet">
     <link href="{% static 'ProyectoMujeresApp/css/contacto.css' %}" rel="stylesheet">
     <link href="{% static 'ProyectoMujeresApp/css/usuario.css' %}" rel="stylesheet">
-
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/b93afd090f.js" crossorigin="anonymous"></script>
-
+ 
 </head>
-
+ 
 <body>
-
+ 
     <div class="section-container header-container">
         <header>
             <div style="text-align: right; color: blueviolet;">
-            
+           
                 {% if user.is_authenticated %}
-                
+               
                 hola {{user.username}} &nbsp;&nbsp; <a href="{% url 'cerrar_sesion' %}">Cerrar sesión</a>
                
                 {%else%}
-
-                
-
+ 
+               
+ 
                 {% endif %}
-                
+               
             </div>
             <div class="encabezado">
                <a href="{% url 'Home' %}"> <img src="{% static 'ProyectoMujeresApp/ASSETS/ppal.jpeg'%}" class="img"></a>
             </div>
-
-          
-
+ 
+         
+ 
             <nav class="navbar">
                 <label for="toggle-menu">
                     <i class="fas fa-bars"></i>
                 </label>
                 <input type="checkbox" id="toggle-menu" />
-
+ 
                 <ul class="navbar-list">
                     <li> <a href= "{% url 'Institucional' %}" class="nav_item">INSTITUCIONAL</a></li>
                     <li> <a href="{% url 'Comunidad' %}" class="nav_item">COMUNIDAD</a></li>
                     <li> <a href="{% url 'Comisiones' %}" class="nav_item">COMISIONES</a></li>
                     <li> <a href="{% url 'Convenios' %}" class="nav_item">CONVENIOS</a></li>
                     <li> <a href="{% url 'Contacto' %}" class="nav_item">CONTACTO</a></li>
-                </ul> 
-
+                </ul>
+ 
             </nav>
-
+ 
         </header>
     </div>
-
+ 
     <!-- contenido cambiante -->
     {% block content %}
-
+ 
     {% endblock %}
-
-
-
+ 
+ 
+ 
    
-
+ 
     <footer>
         <div class="container_footer">
             <div class="box_footer">
                 <h2>Asociación</h2>
-
+ 
                 <a href="#"><i class="fa-solid fa-circle-info"></i>Acerca de</a>
                 <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Trabajos</a>
                 <a href="#"><i class="fa-solid fa-arrows-to-circle"></i>Encuentros</a>
             </div>
-
+ 
             <div class="box_footer">
                 <h2>Redes Sociales</h2>
-
+ 
                 <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
                 <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
                 <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
@@ -97,7 +97,7 @@
             <p>Red Mujeres por la Justicia © 2022 - <b>By PRaV</b></p>
         </div>
     </footer>
-
+ 
 </body>
-
+ 
 </html>
