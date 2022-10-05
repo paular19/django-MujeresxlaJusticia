@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mujeres por la Justicia</title>
-    <link rel="icon" href="{% static 'ProyectoMujeresApp/ASSETS/ppal-modified.png' %}">
-    <link rel="stylesheet" href="{% static 'ProyectoMujeresApp/css/comisiones.css' %}">
+    <link rel="icon" href="{% static 'web/assets/ppal-modified.png' %}">
+    <link rel="stylesheet" href="{% static 'web/css/comisiones.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +22,7 @@
         <header>
             <div class="encabezado">
                <a href="home.html">
-                <img src="{% static 'ProyectoMujeresApp/ASSETS/ppal.jpeg' %}" class="img">
+                <img src="{% static 'web/assets/ppal.jpeg' %}" class="img">
             </a>
             </div>
 
@@ -33,11 +33,11 @@
                 <input type="checkbox" id="toggle-menu" />
 
                 <ul class="navbar-list">
-                    <li> <a href= "institucional.html" class="nav_item">INSTITUCIONAL</a></li>
-                    <li> <a href="comunidad.html" class="nav_item">COMUNIDAD</a></li>
-                    <li> <a href="comisiones.html" class="nav_item">COMISIONES</a></li>
-                    <li> <a href="convenios.html" class="nav_item">CONVENIOS</a></li>
-                    <li> <a href="contacto.html" class="nav_item">CONTACTO</a></li>
+                    <li> <a href="{% url 'Institucional' %}" class="nav_item">INSTITUCIONAL</a></li>
+                    <li> <a href="{% url 'Comunidad' %}" class="nav_item">COMUNIDAD</a></li>
+                    <li> <a href="{% url 'Comisiones' %}" class="nav_item">COMISIONES</a></li>
+                    <li> <a href="{% url 'Convenios' %}" class="nav_item">CONVENIOS</a></li>
+                    <li> <a href="{% url 'Contacto' %}" class="nav_item">CONTACTO</a></li>
                 </ul> 
 
             </nav>

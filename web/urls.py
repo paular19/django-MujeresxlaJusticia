@@ -1,6 +1,6 @@
 from django.urls import path
 
-from ProyectoMujeresApp import views
+from web import views
 
 urlpatterns = [
     path('', views.home, name="Home"),

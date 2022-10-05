@@ -124,7 +124,7 @@ body{
     inset: 0;
     opacity: 0; 
     animation: cycle 15s infinite;
-    background-image: url(../ASSETS/COPIADO.jpg);
+    background-image: url(../assets/COPIADO.jpg);
     background-position: 100% 75%;
     background-size: cover;
     background-repeat: no-repeat;

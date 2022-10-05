@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mujeres por la Justicia</title>
-    <link rel="icon" href="{% static 'ProyectoMujeresApp/ASSETS/ppal-modified.png' %}">
+    <link rel="icon" href="{% static 'web/assets/ppal-modified.png' %}">
     
 
-    <link href="{% static 'ProyectoMujeresApp/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/home.css' %}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -24,7 +24,7 @@
     <div class="section-container header-container">
         <header>
             <div class="encabezado">
-               <a href="home.html"> <img src="{% static 'ProyectoMujeresApp/ASSETS/ppal.jpeg'%}" class="img"></a>
+               <a href="home.html"> <img src="{% static 'web/assets/ppal.jpeg'%}" class="img"></a>
             </div>
 
             <nav class="navbar">
@@ -34,11 +34,11 @@
                 <input type="checkbox" id="toggle-menu" />
 
                 <ul class="navbar-list">
-                    <li> <a href= "institucional.html" class="nav_item">INSTITUCIONAL</a></li>
-                    <li> <a href="comunidad.html" class="nav_item">COMUNIDAD</a></li>
-                    <li> <a href="comisiones.html" class="nav_item">COMISIONES</a></li>
-                    <li> <a href="convenios.html" class="nav_item">CONVENIOS</a></li>
-                    <li> <a href="contacto.html" class="nav_item">CONTACTO</a></li>
+                    <li> <a href="{% url 'Institucional' %}" class="nav_item">INSTITUCIONAL</a></li>
+                    <li> <a href="{% url 'Comunidad' %}" class="nav_item">COMUNIDAD</a></li>
+                    <li> <a href="{% url 'Comisiones' %}" class="nav_item">COMISIONES</a></li>
+                    <li> <a href="{% url 'Convenios' %}" class="nav_item">CONVENIOS</a></li>
+                    <li> <a href="{% url 'Contacto' %}" class="nav_item">CONTACTO</a></li>
                 </ul> 
 
             </nav>
@@ -52,7 +52,7 @@
 
 
     <div class="slide-2">
-        <img src="{% static 'ProyectoMujeresApp/ASSETS/3397973.jpg'%}" alt="imagenss" class="slide-image">
+        <img src="{% static 'web/assets/3397973.jpg'%}" alt="imagenss" class="slide-image">
     </div>
 
 </div>
@@ -63,7 +63,7 @@
 
 <section class="container__card">
     <div class="card">
-        <img src="{% static 'ProyectoMujeresApp/ASSETS/igualdad.png'%}" alt="iconoimage" class="icono-image">
+        <img src="{% static 'web/assets/igualdad.png'%}" alt="iconoimage" class="icono-image">
             
             <h2>EDUCACIÓN PARA LA EQUIDAD</h2>
 
@@ -73,7 +73,7 @@
     </div>
 
     <div class="card">
-            <img src="{% static 'ProyectoMujeresApp/ASSETS/ley.png'%}" alt="iconoimage" class="icono-image">
+            <img src="{% static 'web/assets/ley.png'%}" alt="iconoimage" class="icono-image">
             <h2>CONSOLIDAR</h2>
       <br>
 
@@ -84,7 +84,7 @@
     </div>
 
     <div class="card">
-        <img src="{% static 'ProyectoMujeresApp/ASSETS/megafono.png'%}" alt="iconoimage" class="icono-image">
+        <img src="{% static 'web/assets/megafono.png'%}" alt="iconoimage" class="icono-image">
             <h2>PROMOVER EL EMPODERAMIENTO</h2>
      
 
