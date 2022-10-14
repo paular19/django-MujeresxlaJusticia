@@ -2,13 +2,13 @@
 {% load static %}
 {% block content %}
 
-<div class="caja">
+<div class="box-contacto">
     <div class="contacto-form">    
         
-        <h1 class="contacto"> PONETE EN CONTACTO </h1>  <img src="{% static 'web/assets/correos-electronicos.png' %}" alt="correo" class="img-correo">
+        <h1 class="contacto"> PONETE EN CONTACTO </h1>  
         
         {% if "valido" in request.GET %}
-            <p>informacion enviada correctamente</p>
+            <p class="correcto">¡Estaremos en contacto!</p>
         {% endif %}
             <form action="" method="POST">{{miFormulario.as_p}}
                 {% csrf_token %}

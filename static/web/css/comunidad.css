@@ -46,11 +46,13 @@ body{
     align-items: center;
     padding: 100px 110px 110px 150px;
     background-color: white;
+  
     
   }
 
  .img {
     width: 350px;
+   
 
 } 
 
@@ -65,6 +67,7 @@ body{
     align-items: center;
     justify-content:flex-start;
 }
+.navbar-list{height: 40px;}
 
 
 
@@ -103,20 +106,13 @@ body{
 
 
 
-/* .carrousel{
-        width: 100%;
-    height: 500px;
-      background-image: url(./img/WhatsApp\ Image\ 2022-09-05\ at\ 20.30.24.jpeg);
-      background-repeat: no-repeat;
-       
-    } */
 
 
 
 
 
 
-.caja{
+.box-image{
     width: 100%;
     margin: auto;
     display: flex;
@@ -234,6 +230,7 @@ body{
 .separador{
     height: 54px;
     background: var(--grey-withe);
+    margin-bottom: 80px;
     
 }
 
@@ -242,19 +239,18 @@ body{
     display: flex;
     font-size: 40px;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 40px;
     font-variant: normal;
 }
 
-.container__card{
+.container__capacitaciones{
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 70px;
-    margin-top: 90px;
+    margin-top: 60px;
     
 }
 
@@ -262,26 +258,28 @@ body{
     display: flex;
     width: 350px;
     padding: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2); 
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     align-items: center;
     flex-direction: column;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+
 }
+
+
+
+
+
+
+
+
+
 
  .icono-image{
     margin: 0 auto;
     width: 300px;
 } 
-
-.icono-image:hover{
-    transform: scale(1.1);
-    transform: translateY(-20px);
-
-}
 
 .card h2{
     color: #86359e;
@@ -299,7 +297,7 @@ body{
     text-align: justify;   
 }
 
-.separador2{
+.sep-nosotras{
     height: 150px;
     background: var(--red-pink);
     display: flex;  
@@ -311,7 +309,7 @@ body{
 
   
 
-.separador2 h2{
+.sep-nosotras h2{
     /* font-family: 'Noto Serif JP', serif; */
     font-size: 50px;
     font-style: italic;
@@ -319,13 +317,7 @@ body{
    
 
 }
-.separador2 h3{
-    /* font-family: 'Noto Serif JP', serif; */
-    font-size: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    font-weight: lighter;
-}
+
 
 
 
@@ -511,10 +503,7 @@ footer{
     .navbar-list{
         gap: 40px;
     }
-    .separador2 h3{
-        margin-bottom: 15px;
-
-    }
+    
 }
 
 
@@ -546,7 +535,7 @@ footer{
       width: 100%;
       display: none;
       z-index: 9999;
-      height: calc(90vh - 90px);
+      height: calc(50vh - 90px); 
       border-radius: 9px;
       gap: 60px;
     }
@@ -561,22 +550,26 @@ footer{
 } 
 
 @media (max-width: 912px){
-    .navbar-list{height: calc(90vh - 95px);
+    .navbar-list{height: calc(50vh - 95px);
     }
-    }
+    } 
 
 
 
-@media (max-width: 820px){
-.navbar-list{height: calc(90vh - 95px);
+ @media (max-width: 820px){
+.navbar-list{height: calc(50vh - 95px);
 }
 }
+@media (max-width: 800px){
+
+    .navbar-list{height: calc(50vh - 95px);
+    } }
 
 @media (max-width: 768){
-    .navbar-list{height: calc(90vh - 95px);
+    .navbar-list{height: calc(65vh - 95px);
     }
     
-}
+} 
 @media (max-width: 743px){
     .slides{
         height: 80vh;
@@ -584,12 +577,10 @@ footer{
 }
 
 @media (max-width: 737px){
-    .separador2 h2{
+    .sep-nosotras h2{
         font-size: 30px;
     }
-    .separador h3{
-        font-size: 15px;
-    }
+  
 }
 
 
@@ -613,14 +604,26 @@ footer{
     }
 
 @media (max-width: 540px){
-        .navbar-list{height: calc(90vh - 95px);
+        .navbar-list{height: calc(70vh - 95px);
         }
-        }
+        } 
 @media(max-width: 480px){
-    .navbar-list{height: calc(75vh - 95px);
-    }
+    .navbar-list{height: calc(65vh - 95px);
+    } 
     .slide{
         background-position: 50% 75%;
+    }
+    .card2 {
+        width: 27rem;
+
+    }
+    .card4{
+        width: 27rem;
+
+    }
+    .card5{
+        width: 27rem;
+
     }
 }
 
@@ -640,11 +643,24 @@ footer{
         padding-right: 40px;
     }
 
-    .navbar-list {
-        height: calc(75vh - 90px);
-    }
+     .navbar-list {
+        height: calc(65vh - 90px);
+    } 
     .titulo{
         font-size: 35px;
+    }
+    
+    .card2 {
+        width: 24rem;
+
+    }
+    .card4{
+        width: 24rem;
+
+    }
+    .card5{
+        width: 24rem;
+
     }
 }
 
@@ -659,24 +675,38 @@ footer{
     }
 
     .navbar-list {
-        height: calc(74vh - 90px);
-    }
+        height: calc(80vh - 90px);
+    } 
+   
 }
 
 
 @media (max-width: 400px){
 
-    .navbar-list{height: calc(95vh - 95px);
+    .navbar-list{height: calc(80vh - 95px);
     }
-}
+} 
 
 @media (max-width: 393px){
 
 .img{
     margin-left: -49px;
 }
-.navbar-list{height: calc(90vh - 95px);
+.navbar-list{height: calc(80vh - 95px);
+} 
+.card2 {
+    width: 23rem;
+
 }
+.card4{
+    width: 23rem;
+
+}
+.card5{
+    width: 23rem;
+
+}
+
 
 }
 
@@ -685,11 +715,30 @@ footer{
 @media (max-width: 375px){
     .encabezado{
         width: 7%;}
-     .navbar-list{height: calc(80vh - 95px);
-        }
+      .navbar-list{height: calc(80vh - 85px);
+        } 
         .titulo{
             font-size: 32px;
         }
+        .container__capacitaciones {margin-top: 40px;
+        }
+        .card2 {
+            width: 23rem;
+    
+        }
+        .card4{
+            width: 23rem;
+    
+        }
+        .card5{
+            width: 23rem;
+    
+        }
+        .box-image {
+            padding-left: 0px;
+            padding-right: 0px;
+    
+    }
 }
 
 @media (max-width: 373px){
@@ -703,11 +752,28 @@ footer{
         width: 300px;
     } 
     
-    .navbar-list{height: calc(82vh - 95px);
-        }
+    .navbar-list{height: calc(85vh - 95px);
+        } 
         .titulo{
             font-size: 30px;
         }
+        .box-image {
+            padding-left: 0px;
+            padding-right: 0px;
+    
+    }
+    .card2 {
+        width: 22rem;
+
+    }
+    .card4{
+        width: 22rem;
+
+    }
+    .card5{
+        width: 22rem;
+
+    }
     
     
     }
@@ -715,16 +781,14 @@ footer{
     @media (max-width: 352px){
         .titulo{
             font-size: 30px;
-        }
+        }}
 
 
 @media (max-width: 320px){
-    .separador2 h2{
+    .sep-nosotras h2{
         font-size: 20px;
     } 
-    .separador2 h3{
-        font-size: 15px;
-    }  
+    
     .icono-image{
         width: 200px;
     }
@@ -735,9 +799,31 @@ footer{
     .card{
     width: 300px;
     }
-    .navbar-list{height: calc(95vh - 95px);
+    .navbar-list{
+        margin-top: 32px;
     }
     .titulo{
         font-size: 30px;
+        margin-bottom: 0;
     }
-}}
+    .container__capacitaciones {margin-top: 40px;
+    }
+    .card2 {
+        width: 20rem;
+
+    }
+    .card4{
+        width: 20rem;
+
+    }
+    .card5{
+        width: 20rem;
+
+    }
+    .box-image {
+        padding-left: 0px;
+        padding-right: 0px;
+
+}
+
+}

@@ -1,0 +1,18 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+<div style="margin-bottom: 238px;">
+<h2 class="titulo" style="margin-top: 90px; margin-bottom: 90px;"> LINKS DE INTERÉS </h2>
+{% for post in posts %}
+        <div style="justify-content: center; align-items: center; text-align:center; margin-top: 20px;">
+               <a href="{{post.link}}">
+               <h3 style="color: #86359e; justify-items: center;">{{post.titulo}}</h3></a>
+         <br>
+    
+                
+           
+        </div>  
+        {% endfor %}
+</div>
+
+{% endblock %}

@@ -7,9 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
-
-
 }
 
 
@@ -37,21 +34,48 @@ body{
     background-color: white;
 }
 
+.user{
+    color: #FFF;
+    padding: 0.7em 1.7em;
+    font-size: 13px;
+    border-radius: 0.5em;
+    background: var(--red-pink);
+    transition: all .3s;
+    /* box-shadow: 6px 6px 12px #e9e8e8,
+                -6px -6px 12px #fff;  */
+    border: none;
+    margin-right: 3px;
+    
+ 
+    
+}
+.user:hover{
+    
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+.name{
+    color: var(--red-pink);
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: right;
+    margin-bottom: 1px;
+}
 
-.encabezado{ 
+
+    .encabezado{ 
     margin: 0 auto;
     max-width: 1400px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 110px 110px 150px;
     background-color: white;
     
   }
 
- .img {
-    width: 350px;
+.img {
+    width: 300px;
 
 } 
 
@@ -66,6 +90,7 @@ body{
     align-items: center;
     justify-content:flex-start;
 }
+.navbar-list{height: 40px;}
 
 
 
@@ -98,6 +123,7 @@ body{
 }
 
 
+
 #toggle-menu{
     display: none;
 }
@@ -126,7 +152,7 @@ body{
     opacity: 0; 
     animation: cycle 15s infinite;
     background-image: url(../assets/COPIADO.jpg);
-    background-position: 100% 75%;
+    background-position: 75% 75%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -153,8 +179,7 @@ body{
 }
 
 .titulo{
-    color: aqua;
-    /* color:#86359e; */
+    color:#86359e; 
     display: flex;
     font-size: 40px;
     justify-content: center;
@@ -166,7 +191,7 @@ body{
 .container__card{
     width: 100%;
     padding: 0;
-    margin-top: 39px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -190,16 +215,12 @@ body{
     margin-bottom: 45px;
 }
 
- .icono-image{
+.icono-image{
     margin: 0 auto;
     width: 40px;
 } 
 
-.icono-image:hover{
-    transform: scale(1.1);
-    transform: translateY(-20px);
 
-}
 
 .card h2{
     color: #86359e;
@@ -224,10 +245,10 @@ body{
         padding-top: 30px;
         
     }
-.separador2{
-    height: 250px;
+
+.frase{
+    height: 300px;
     background: rgb(134,53,158);
-    background: linear-gradient(90deg, rgba(134,53,158,1) 0%, rgba(172,39,101,1) 100%);
     display: flex;  
     flex-direction: column;
     justify-content: space-around;
@@ -236,19 +257,20 @@ body{
 
   
 
-.separador2 h2{
+.frase h2{
     /* font-family: 'Noto Serif JP', serif; */
     font-size: 50px;
     font-style: italic;
     font-weight: lighter;
 
 }
-.separador2 h3{
+.frase h3{
     /* font-family: 'Noto Serif JP', serif; */
     font-size: 30px;
     display: flex;
     flex-direction: row-reverse;
     font-weight: lighter;
+    padding-top: 10px;
 }
 
 
@@ -455,7 +477,8 @@ footer{
 
 @media (max-width: 990px) {
   
-  
+   
+
     .navbar i {
       display: block;
       padding-left: 4px;
@@ -465,12 +488,12 @@ footer{
       position: absolute;
       background-color: var(--blue);
       flex-direction: column;
-      top: 260px;
+      margin-top: 72px;
       right: 0;
       width: 100%;
       display: none;
       z-index: 9999;
-      height: calc(90vh - 90px);
+      height: calc(50vh - 90px);
       border-radius: 9px;
       gap: 60px;
     }
@@ -482,20 +505,28 @@ footer{
     .encabezado{
         padding-left: 75px;
     }
+   
 } 
 
 @media (max-width: 912px){
-    .navbar-list{height: calc(90vh - 95px);
-    }
+     .navbar-list{height: calc(50vh - 95px);
+    } 
     }
 
 @media (max-width: 820px){
-.navbar-list{height: calc(90vh - 95px);
+ .navbar-list{height: calc(50vh - 95px);
+} 
 }
-}
+@media (max-width: 800px){
 
-@media (max-width: 768){
-    .navbar-list{height: calc(90vh - 95px);
+    .navbar-list{height: calc(50vh - 95px);
+    } 
+
+@media (max-width: 768px){
+    .navbar-list{height: calc(65vh - 95px);
+    } 
+    .slide{
+        background-position: 70% 75%;
     }
     
 }
@@ -532,21 +563,32 @@ footer{
             height: 60vh;
         }
     }
+@media (max-width: 600px){
+    .slide{
+        
+     background-position: 53% 75%}}
 
 @media (max-width: 540px){
-        .navbar-list{height: calc(100vh - 95px);
-        }
-        }
+        .navbar-list{height: calc(70vh - 95px);
+        } 
+        .frase {
+            height: 351px;
+        
+        }}
 @media(max-width: 480px){
-    .navbar-list{height: calc(75vh - 95px);
-    }
+    .navbar-list{height: calc(65vh - 95px);
+    } 
     .slide{
-        background-position: 50% 75%;
+        background-position: 52% 75%;
     }
     .titulo{
         font-size: 35px;
     }
-}
+    .frase {
+        height: 465px;
+    
+    }}
+
 
 @media (max-width: 460px){
         .slides{
@@ -565,7 +607,7 @@ footer{
     }
 
     .navbar-list {
-        height: calc(75vh - 90px);
+        height: calc(65vh - 90px);
     }
 
     .titulo{
@@ -584,13 +626,13 @@ footer{
     }
 
     .navbar-list {
-        height: calc(74vh - 90px);
+        height: calc(80vh - 90px);
     }
 }
 @media (max-width: 400px){
 
     .navbar-list{height: calc(80vh - 95px);
-    }
+    } 
 }
 
 @media (max-width: 393px){
@@ -598,8 +640,8 @@ footer{
 .img{
     margin-left: -49px;
 }
-.navbar-list{height: calc(80vh - 95px);
-}
+ .navbar-list{height: calc(80vh - 95px);
+} 
 
 }
 
@@ -610,7 +652,7 @@ footer{
     .encabezado{
         width: 7%;}
      .navbar-list{height: calc(80vh - 95px);
-        }
+        } 
     .titulo{
         font-size: 35px;
     }
@@ -628,12 +670,16 @@ footer{
         width: 300px;
     } 
     
-    .navbar-list{height: calc(82vh - 95px);
-        }
+     .navbar-list{height: calc(85vh - 95px);
+        } 
    
         .titulo{
             font-size: 30px;
         }
+        .frase h3{
+            padding-top: 20px;
+        }
+    
     }
 
 
@@ -645,10 +691,13 @@ footer{
     } 
     .separador2 h3{
         font-size: 15px;
-    }  
+    } 
+   .frase{
+    height: 540px;
+   }
   
     .slide{
-        background-position: 50% 75%;
+        background-position: 52% 75%;
     }
     .card{
     width: 300px;
@@ -656,8 +705,8 @@ footer{
     .titulo{
         font-size:29px;
     }
-    .navbar-list{height: calc(95vh - 95px);
-    }}
+     .navbar-list{height: calc(85vh - 95px);
+    }} 
 
 
 

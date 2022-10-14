@@ -1,0 +1,30 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+<section class="container__card">
+    <a href="{% url 'Jurisp' %}" class=href-card><div class="card">
+        <img src="{% static 'web/assets/libros.png' %}" alt="iconoimage" class="icono-image">
+           
+            <h2>MATERIAL BIBLIOGRÁFICO</h2>
+ 
+ 
+       
+    </div>
+</a>
+ 
+ 
+<a href="{% url 'clases' %}" class=href-card><div class="card">
+            <img src="{% static 'web/assets/video-conferencia.png'%}" alt="iconoimage" class="icono-image">
+            <h2><br>
+                MATERIAL AUDIOVISUAL
+            <br></h2>
+     
+ 
+           
+ 
+       
+    </div>
+</a>
+</section>
+
+{% endblock %}

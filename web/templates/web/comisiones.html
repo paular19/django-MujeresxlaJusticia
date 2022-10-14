@@ -9,7 +9,7 @@
     <a href="#" class=href-card><div class="card">
         <img src="{% static 'web/assets/abuelos.png' %}" alt="iconoimage" class="icono-image">
            
-            <h2>NIÑEZ, ADOLESCENCIA Y VEJEZ </h2>
+            <h2><br>NIÑEZ, ADOLESCENCIA Y VEJEZ </h2>
  
  
        
@@ -29,9 +29,10 @@
     </div>
 </a>
  
-<a href="../area/area.html" class=href-card><div class="card">
+<a href="{% url 'pasaje' %}" class=href-card><div class="card">
+    
         <img src="{% static 'web/assets/jurisprudencia.png'%}" alt="iconoimage" class="icono-image">
-            <h2><br>
+            <h2><br><br>
                 JURISPRUDENCIA
  
             </h2>
@@ -52,11 +53,24 @@
    
 </div>
 </a>
-<a href="{% url 'Usuario' %}" class=href-card><div class="card">
+<a href="{% url 'pasaje' %}" class=href-card><div class="card">
+    
     <img src="{% static 'web/assets/graduado.png'%}" alt="iconoimage" class="icono-image">
-        <h2><br>
+        <h2><br><br>
      
             AREA ACADÉMICA
+ 
+        </h2>
+   
+   
+</div>
+</a>
+
+<a href="{% url 'Links' %}" class=href-card><div class="card">
+    <img src="{% static 'web/assets/link.png'%}" alt="iconoimage" class="icono-image">
+        <h2><br><br>
+     
+            LINKS DE INTERÉS 
  
         </h2>
    

@@ -1,0 +1,34 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+   
+<h2 class="titulo" style="margin-bottom:40px; margin: top 50px; margin-right: 90px; margin-left: 90px;"> BIBLIOGRAFÍA Y JURISPRUDENCIA </h2>
+<section class="contenedor.jurisp">   
+    <div class="separador"></div>
+        {% for post in posts %}
+        <div style="justify-content: center; align-items: center; text-align:center; margin-top: 20px;">
+                <h2 style="color:#ac2765; margin-right: 90px; margin-left: 90px;">{{post.titulo}}</h2>
+                <br>
+                <P style="color:#ac2765; margin-right: 90px; margin-left: 90px;">{{post.descripcion}}</P>
+                
+               <a href="{{post.field.url}}"> 
+                <button>DESCARGAR</button>
+            </a>
+                <div class="separador">
+        </div>
+                </div>
+         
+    
+                
+           
+          
+          
+        
+</section>  
+    
+    {% endfor %}
+    
+
+
+{% endblock %}
