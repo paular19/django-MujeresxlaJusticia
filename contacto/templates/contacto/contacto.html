@@ -7,9 +7,9 @@
         
         <h1 class="contacto"> PONETE EN CONTACTO </h1>  
         
-        {% if "valido" in request.GET %}
-            <p class="correcto">¡Estaremos en contacto!</p>
-        {% endif %}
+            {% if "valido" in request.GET %}
+                <p class="correcto">¡Estaremos en contacto!</p>
+            {% endif %}
             <form action="" method="POST">{{miFormulario.as_p}}
                 {% csrf_token %}
                     
@@ -29,9 +29,9 @@
                         <textarea name="mensaje" rows="5"></textarea>
                         <imput type="text" name="mensaje" id="mensaje"></imput>
                      -->
-                    <button type="submit">
-                    Enviar
-                    </button>
+                    <input type="submit" style="margin-top: 10px;">
+                    
+                    </input>
             </form>
     </div>  
       
