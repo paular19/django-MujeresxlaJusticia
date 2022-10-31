@@ -158,7 +158,7 @@ span {
     padding-top: 50px;
 }
 
-.quienes-titulo{
+.q-titulo{
     font-size: 40px;
     letter-spacing: 1px;
     color: var(--pink);
@@ -806,7 +806,7 @@ footer{
     .info2{
         flex-direction: column;
     }
-    .quienes-titulo{
+    .q-titulo{
         font-size: 30px;
     }
     .info__description{
