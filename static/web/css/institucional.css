@@ -164,6 +164,13 @@ span {
     color: var(--pink);
     margin-top: 30px;
 }
+.h2-title-q{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: var(--pink);
+    margin-top: 30px;
+    margin-left: 20px;
+}
 
 
 .p-info{  font-size: 29px;
